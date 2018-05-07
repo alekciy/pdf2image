@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>title</title>
+		<title>Презентация <?=$pdf->id?></title>
 		<link rel="stylesheet" href="./assets/fotorama-4.6.4/fotorama.min.css">
 		<link rel="stylesheet" href="./assets/bootstrap-3.3.7/css/bootstrap.min.css">
 	</head>

@@ -17,11 +17,15 @@
     <div class="wrap">
         <div class="container">
             <?php foreach(Yii::$app->session->getFlash('pdfError', []) as $messageList): ?>
-                <?php foreach ($messageList as $fieldName => $messages): ?>
-                    <?php foreach ($messages as $mess): ?>
-                        <div class="alert alert-danger" role="alert"><?=$mess?></div>
-                    <?php endforeach ?>
-                <?php endforeach ?>
+				<?php if (is_array($messageList)): ?>
+					<?php foreach ($messageList as $fieldName => $messages): ?>
+                	    <?php foreach ($messages as $mess): ?>
+                	        <div class="alert alert-danger" role="alert"><?=$mess?></div>
+                	    <?php endforeach ?>
+                	<?php endforeach ?>
+				<?php else: ?>
+					<div class="alert alert-danger" role="alert"><?=$messageList?></div>
+				<?php endif ?>
             <?php endforeach ?>
 
             <?= $content ?>

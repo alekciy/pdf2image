@@ -5,6 +5,7 @@ $this->title = 'Веб презентация';
 
 <div>
     <a href="/pdf/download?id=<?=$pdf->id?>" class="btn btn-info" role="button">Скачать презентацию</a>
+    <a href="/" class="btn btn-info" role="button">Загрузить новую презентацию</a>
 </div>
 <!-- Fotorama -->
 <div class="fotorama"
