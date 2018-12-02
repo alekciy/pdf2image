@@ -101,6 +101,7 @@
     curl -sS https://getcomposer.org/installer | php7.2
     sudo mv composer.phar /usr/bin/composer
     # Задаем OAuth GitHub token как это описано в https://getcomposer.org/doc/articles/troubleshooting.md#api-rate-limit-and-oauth-tokens
+    composer global require hirak/prestissimo # ускорение загрузки пакетов
     ```
 1. Клонируем проект и устанавливаем зависимости:
     ```bash
